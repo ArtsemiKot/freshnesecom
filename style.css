@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins-Bold.ttf) format('truetype'),
+        url(./fonts/Poppins-Medium.ttf) format('truetype'),
+        url(./fonts/Poppins-Regular.ttf) format('truetype'),
+        url(./fonts/Poppins-SemiBold.ttf) format('truetype'),
+        url(./fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+body {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+header .logo {
+    background-image: url(./assets/Freshnesecom.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 177px;
+    height: 18px;
+}
+
+header .search {
+    display: flex;
+}
+
+header .search div {
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px 0 0 12px;
+    width: 220px;
+    padding: 10px 0 10px 16px;
+    font: 700 15px 'Poppins';
+    color: #151515;
+}
+
+header .search input {
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 0 12px 12px 0;
+    width: 320px;
+    outline: none;
+}
+
+header .search input::placeholder {
+    font: 400 14px 'Poppins';
+    color: #A9A9A9;
+    padding: 11px 0px 10px 24px;
+}
+
+header .nav-img {
+    display: flex;
+}
+
+header .nav-img div:not(:last-child) {
+    margin-right: 45px;
+}
+
+header .man {
+    background-image: url(./assets/Man.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+header .bag {
+    background-image: url(./assets/Layer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+main {
+    margin-top: 242px;
+}
+
+.banner .banner1 {
+    display: grid;
+    grid-template-columns: 420px 420px;
+    grid-column-gap: 31px;
+    justify-content: center;
+}
+
+.banner .banner1 .wrapper {
+    background-image: url(./assets/img-back.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 420px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 33px;
+}
+
+.banner .banner1 .wrapper .banner-column p {
+    font: 600 12px 'Poppins';
+    color: #6A983C;
+
+}
+
+.banner .banner1 .wrapper .banner-column h2 {
+    font: 600 22px 'Poppins';
+    color: #151515;
+}
+
+.banner .banner1 .wrapper .border {
+    border: 2px solid #92C064;
+    border-radius: 12px;
+    font: 700 15px 'Poppins';
+    color: #151515;
+    padding: 12px 23px 12px 16px;
+    width: 133px;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    color: #6A983C;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.product {
+    margin-top: 128px;
+}
+
+.product .wrapper-grid {
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-column-gap: 32px;
+    grid-row-gap: 137px;
+    justify-content: center;
+}
+
+.product .wrapper-grid .item {
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 332px;
+}
+
+.product .wrapper-grid .item .img {
+    background: #F9F9F9;
+    border-radius: 12px;
+    width: 237px;
+    height: 180px;
+}
+
+.product .wrapper-grid .item h3 {
+    font: 500 15px 'Poppins';
+    color: #151515;
+}
+
+.product .wrapper-grid .item p {
+    font: 400 12px 'Poppins';
+    color: #575757;
+}
+
+.product .wrapper-grid .item .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product .wrapper-grid .item .price h2 {
+    font: 600 18px 'Poppins';
+    color: #151515;
+}
+
+.product .wrapper-grid .item .price .button {
+    background: #6A983C;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    font: 700 15px 'Poppins';
+    color: #FFFFFF;
+    width: 90px;
+    text-align: center;
+    padding: 6px 0;
+}
+
+footer {
+    margin-top: 137px;
+}
+
+footer .maincolumn {
+    display: grid;
+    grid-template-columns: 134px 150px 197px;
+    grid-column-gap: 186px;
+    justify-content: center;
+}
+
+footer .maincolumn .column h2 {
+    font: 600 18px 'Poppins';
+    color: #151515;
+    margin-bottom: 16px;
+}
+
+footer .maincolumn .column p {
+    font: 400 14px 'Open Sans';
+    color: #6A983C;
+    margin-bottom: 16px;
+}
